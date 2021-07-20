@@ -26,7 +26,7 @@ public class TC_01 {
 		driver.findElement(By.name("submit")).click();
 		Thread.sleep(4000);
 		String text=driver.findElement(By.xpath("//a[contains(text(),'Manager')]")).getText();
-		
+		//code is edited 
 		try {
 			Assert.assertEquals(text,"Manager");
 		} catch (Exception e) {
